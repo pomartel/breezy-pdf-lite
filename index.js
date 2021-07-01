@@ -9,7 +9,7 @@ const webServer = new Server({
 console.log('Starting Google Chrome')
 
 ChromeLauncher.launch({
-  chromeFlags: ['--headless', '--disable-gpu', '--disable-dev-shm-usage', '--no-sandbox', '--hide-scrollbars', '--disable-web-security'],
+  chromeFlags: ['--headless', '--disable-gpu', '--disable-dev-shm-usage', '--no-sandbox', '--hide-scrollbars'],
   port:        9222,
   startingUrl: (process.env.STARTING_URL || 'about:blank')
 }).then((chrome) => {
